@@ -1,0 +1,495 @@
+/* Head tags font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+/* Text font family */
+
+
+/* Reset */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    --pink : hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --vd-cyan: hsl(192, 100%, 9%);
+    --vp-blue: hsl(207, 100%, 98%);
+}
+
+body{
+    padding: 2rem 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--vd-cyan);
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: blue; */
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-size: 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* HEADER SECTION STYLES */
+.huddle__header{
+    margin-bottom: 40px;
+}
+.huddle__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.huddle__logo img{
+    width: 140px;
+}
+
+.btn{
+    font-size: 1.5rem;
+    color: var(--pink);
+    padding: .3em 1.4em;
+    border: 1px solid var(--pink);
+    border-radius: 30px;
+    transition: box-shadow 300ms;
+    
+}
+
+.btn:hover{
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+.huddle__head{
+    margin-bottom: 20px;
+}
+
+.huddle__head__title{
+    font-size: 3rem;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.huddle__head__text{
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.3em;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    background-color: var(--pink);
+    padding: .8em 3em;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    transition: box-shadow 300ms;
+}
+
+.primary-btn:hover{
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+
+/* BODY SECTION STYLES */
+
+/* BODY TOP SECTION STYLES */
+.huddle__main{
+    margin-bottom: 4rem;
+}
+
+.huddle__main__top{
+    margin-bottom: 10rem;
+}
+
+.huddle__main__top__mock{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.huddle__main__top__mock img{
+    width: 100%;
+}
+
+.huddle__main__top__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+
+.huddle__main__top__info__one {
+    flex: 1;
+}
+
+
+.huddle__main__top__info__title{
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.huddle__main__top__info__title::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    height: 20px;
+}
+
+.kk::before{
+    background: url(icon-communities.svg) no-repeat;
+    background-size: 20px;
+}
+.mm::before{
+    background: url(icon-messages.svg) no-repeat;
+    background-size: 20px;
+}
+
+.huddle__main__top__info__text{
+    color: hsla(0, 0%, 0%, 0.521);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* BODY MID SECTION STYLES */
+.huddle__main__mid {
+    margin-bottom: 4rem;
+}
+
+.huddle__main__mid__wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    margin-bottom: 8rem;
+
+    position: relative;
+    z-index: 0;
+}
+
+
+.huddle__main__mid__title{
+    font-size: 2.7rem;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+
+.huddle__main__mid__text {
+    font-size: 1.7rem;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.huddle__main__mid__img{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.huddle__main__mid__img img{
+    width: 100%;
+}
+
+
+/* BODY BOTTOM SECTION STYLES */
+.huddle__main__bottom{
+    margin-bottom: 3rem;
+}
+
+.huddle__main__bottom__title{
+    font-size: 2.3rem;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER SECTION STYLE */
+
+.huddle__footer{
+    background-color: var(--vd-cyan);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+
+.huddle__footer__wrapper{
+    padding: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+
+.huddle__footer__left{
+    margin-bottom: 2rem;
+}
+
+
+.huddle__footer__left__logo{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.huddle__footer__left__logo img{
+    width: 140px;
+}
+
+.huddle__footer__left__text{
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    margin-bottom: 1.5rem;
+}
+
+.huddle__footer__reachout {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.huddle__footer__icon img{
+    height: 15px;
+}
+
+.huddle__footer__reachout p{
+    font-size: 1.5rem;
+}
+
+
+.huddle__footer__right {
+    margin-bottom: 4rem;
+}
+
+.huddle__footer__right__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.huddle__footer__right__text{
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.huddle__footer__right__form input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.huddle__footer__right__form input:focus{
+    outline: 1px solid var(--pink);
+    outline-offset: 2px;
+}
+
+
+
+.huddle__footer__right__form button{
+    color: white;
+    font-weight: 800;
+    display: block;
+    padding: .7em 2em;
+    margin-left: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--pink);
+    transition: background-color 300ms;
+}
+
+.huddle__footer__right__form button:hover{
+    background-color: var(--light-pink);
+    cursor: pointer;
+}
+
+i{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+i:hover{
+    color:  rgba(0, 255, 200, 0.945);
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .huddle__logo img{
+        width: 200px;
+    }
+
+    .btn{
+        font-size: 1.7rem;
+    }
+
+    .huddle__head__title{
+        font-size: 4rem;
+    }
+
+    .huddle__head__text{
+        font-size: 2.1rem;
+    }
+
+    .primary-btn {
+        font-size: 1.9rem;
+    }
+
+
+    .huddle__main__top{
+        margin-bottom: 7rem;
+    }
+
+    section{
+        margin-bottom: 10rem;
+    }
+
+    .huddle__main__top__info{
+        flex-direction: row;
+    }
+
+    .huddle__main__mid__wrapper{
+        gap: 3rem;
+    }
+
+    .grow{
+        flex-direction: row;
+    }
+
+    .grow .huddle__main__mid__info{
+        flex: 3;
+        text-align: left;
+        align-self: center;
+    }
+
+    .grow .huddle__main__mid__img{
+        flex: 4;
+    }
+    
+    .flowing{
+        flex-direction: row-reverse;
+    }
+
+    .flowing .huddle__main__mid__info{
+        flex: 3;
+        text-align: left;
+        align-self: center;
+    }
+
+    .flowing .huddle__main__mid__img{
+        flex: 4;
+    }
+
+    .users{
+        flex-direction: row;
+    }
+
+    .users .huddle__main__mid__info{
+        flex: 3;
+        text-align: left;
+        align-self: center;
+    }
+
+    .users .huddle__main__mid__img{
+        flex: 4;
+    }
+
+    .huddle__main__mid__title{
+        font-size: 4rem;
+    }
+
+    .huddle__main__mid__text{
+        font-size: 2.1rem;
+    }
+
+    .huddle__main__bottom__title{
+        font-size: 4rem;
+    }
+
+    .huddle__footer__wrapper{
+        padding: 2rem;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        gap: 9rem;
+    }
+
+    .huddle__footer__left {
+        flex: 3;
+    }
+
+    .huddle__footer__right {
+        flex: 4;
+    }
+
+    .huddle__footer__right__form input{
+        width: 59%;
+        margin-right: 1.5rem;
+    }
+
+    .huddle__footer__right__form button{
+        display: inline-block;
+    }
+
+    .huddle__footer__left__logo img{
+        width: 230px;
+    }
+
+    .huddle__footer__left__text{
+        font-size: 1.9rem;
+    }
+
+    .huddle__footer__icon img{
+        height: 2rem;
+    }
+    
+    .huddle__footer__reachout p{
+        font-size: 2rem;
+    }
+
+    .huddle__footer__right__title {
+        font-size: 3.2rem;
+        
+    }
+    
+    .huddle__footer__right__text{
+        font-size: 1.9rem;
+    }
+
+    i{
+        font-size: 1.7rem;
+    }
+    
+}
